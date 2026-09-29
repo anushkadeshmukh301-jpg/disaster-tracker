@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eef4f8;
+    text-align: center;
+}
+
+header {
+    background: #123b60;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #bbb;
+}
+
+.high { color: red; }
+.medium { color: orange; }
+.low { color: green; }
+
+input, select, button {
+    padding: 12px;
+    margin: 5px;
+}
+
+button {
+    background: #123b60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result {
+    color: green;
+    font-weight: bold;
+}
+#reports {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+#reports .card {
+    border-left: 5px solid #123b60;
+}
+
+button:hover {
+    background: #2676c8;
+}
+#liveAlerts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+#liveAlerts .card {
+    width: 280px;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+    border-left: 5px solid #1677c8;
+}
+
+#liveAlerts a {
+    color: #1677c8;
+}
+
+#refreshAlerts {
+    padding: 12px 20px;
+    background: #123b60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}

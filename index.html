@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disaster Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌍 Disaster Tracker</h1>
+    <p>Disaster Monitoring and Alert System</p>
+</header>
+
+<h2>Disaster Alerts</h2>
+
+<div class="container">
+    <div class="card">
+        <h3>🌊 Flood</h3>
+        <p>Location: Mumbai</p>
+        <p class="high">Risk: High</p>
+    </div>
+
+    <div class="card">
+        <h3>🌎 Earthquake</h3>
+        <p>Location: Pune</p>
+        <p class="low">Risk: Low</p>
+    </div>
+
+    <div class="card">
+        <h3>🌀 Cyclone</h3>
+        <p>Location: Coastal Area</p>
+        <p class="medium">Risk: Medium</p>
+    </div>
+</div>
+
+<h2>Report a Disaster</h2>
+
+<form id="reportForm">
+    <input id="location"
+        placeholder="Enter location" required>
+
+    <select id="type">
+        <option>Flood</option>
+        <option>Earthquake</option>
+        <option>Cyclone</option>
+        <option>Wildfire</option>
+    </select>
+
+    <button type="submit">Submit Report</button>
+</form>
+
+<p id="result"></p>
+
+<h2>Submitted Disaster Reports</h2>
+<div id="reports"></div>
+<hr>
+
+<h2>🌐 Live Earthquake Alerts</h2>
+
+<button id="refreshAlerts">Refresh Alerts</button>
+
+<p id="apiStatus">Loading earthquake data...</p>
+
+<div id="liveAlerts"></div>
+
+<p>
+  Source:
+  <a href="https://earthquake.usgs.gov/earthquakes/feed/"
+     target="_blank">
+    Official USGS Earthquake Feed
+  </a>
+</p>
+
+<script src="script.js"></script>
+</body>
+</html>
